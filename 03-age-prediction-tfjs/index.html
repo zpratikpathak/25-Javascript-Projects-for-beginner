@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opencv JS</title>
+    <script src="js/utils.js"></script>
+    <script async src="js/opencv.js" onload="openCvReady();"></script>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    
+    <style>
+        canvas {
+      position: absolute;
+    }
+    h2{
+        position: relative;
+        top: -250px;
+        right: 350;
+    }
+    body {
+      margin: 0;
+      background-color: whitesmoke;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <video id="cam_input" height="680" width="900"></video>
+    <canvas id="canvas_output"></canvas>
+    <script type="text/JavaScript" src="script.js"></script>
+    <!-- <h2 id="output">Initializing</h2> -->
+</body>
+
+</html>
