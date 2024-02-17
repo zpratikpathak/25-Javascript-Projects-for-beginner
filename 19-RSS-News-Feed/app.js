@@ -1,4 +1,4 @@
-let url = "http://feeds.bbci.co.uk/news/technology/rss.xml";
+let url = "https://pratikpathak.com/feed/";
 const textarea = document.querySelector("#feed-textarea > ul");
 
 const date = new Date();
