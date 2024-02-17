@@ -1,72 +1,71 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  img {
-    max-width: 100%;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.slider-game {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.container {
+  display: grid;
+  width: 25em;
+  height: 25em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 8em;
+}
+.original-image {
+  width: 25em;
+  height: 25em;
+}
+.image-container {
+  border: 1px solid #ffffff;
+}
+.cover-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #edb506;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#start-button {
+  font-size: 1.2em;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 3em;
+  cursor: pointer;
+}
+#moves {
+  position: relative;
+  margin: 1em;
+  text-align: right;
+}
+.hide {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
   .slider-game {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 5%;
+    flex-direction: column;
   }
   .container {
-    display: grid;
-    width: 25em;
-    height: 25em;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 8em;
+    width: 20em;
+    height: 20em;
+    grid-auto-rows: 6em;
   }
   .original-image {
-    width: 25em;
-    height: 25em;
+    width: 20em;
+    height: 20em;
   }
-  .image-container {
-    border: 1px solid #ffffff;
-  }
-  .cover-screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #edb506;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #start-button {
-    font-size: 1.2em;
-    padding: 0.8em 2em;
-    border: none;
-    border-radius: 3em;
-    cursor: pointer;
-  }
-  #moves {
-    position: relative;
-    margin: 1em;
-    text-align: right;
-  }
-  .hide {
-    display: none;
-  }
-  @media only screen and (max-width: 768px) {
-    .slider-game {
-      flex-direction: column;
-    }
-    .container {
-      width: 20em;
-      height: 20em;
-      grid-auto-rows: 6em;
-    }
-    .original-image {
-      width: 20em;
-      height: 20em;
-    }
-  }
-   
+}

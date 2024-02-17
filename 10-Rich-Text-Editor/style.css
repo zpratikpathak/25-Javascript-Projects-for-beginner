@@ -60,11 +60,15 @@ input[type="color"] {
 }
 input[type="color"]::-webkit-color-swatch {
   border-radius: 15px;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 3px #020929;
 }
 input[type="color"]::-moz-color-swatch {
   border-radius: 15px;
-  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 3px #020929;
 }
 #text-input {
   margin-top: 10px;

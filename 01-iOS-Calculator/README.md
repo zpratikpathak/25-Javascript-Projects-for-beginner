@@ -1,4 +1,5 @@
-﻿# iOS-Calculator
+﻿# 1 iOS-Calculator
+
 A Calculator to implement my HTML5, CSS and JS skills.
 
 Check it out here: ﻿https://zpratikpathak.github.io/iOS-Calculator/

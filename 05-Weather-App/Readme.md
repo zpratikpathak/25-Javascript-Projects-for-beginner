@@ -1,4 +1,5 @@
 # Simple Weather App using JS
+
 A simple web app to check weather of city
 
 # How to run?
@@ -7,3 +8,5 @@ A simple web app to check weather of city
 2. Save your `API KEY` in `script.js` on line 1 , inside "apiKey" variable.
 3. Open "index.html"
 4. Voila It's Done
+
+![Weather App using JS](image.png)
