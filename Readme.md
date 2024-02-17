@@ -1,7 +1,11 @@
 # Top 25+ Javascript Projects for Beginners with Source Code Github [2024 Latest Project]
 
+I have curated a list of 25+ javascript projects for beginners with source code. Feel free to play with these projects and improve your skills.
+
 Full Project with Preview Available at :
 https://pratikpathak.com/top-javascript-projects-with-source-code-github/
+
+<b>Don't forget to give a 🌟 to the repo</b>
 
 ## How to Contribute
 
@@ -10,6 +14,37 @@ https://pratikpathak.com/top-javascript-projects-with-source-code-github/
 3. Open a Pull Request
 
 <hr>
+
+## Table of Contents
+
+1. [iOS Calculator App](#1-ios-calculator-app)
+2. [Travel India](#2-travel-india)
+3. [Age Prediction Tfjs](#3-age-prediction-tfjs)
+4. [Connect ME](#4-connect-me)
+5. [Weather App](#5-weather-app)
+6. [Digital Clock](#6-digital-clock)
+7. [FlashLight Effect](#7-flashlight-effect)
+8. [Puzzle Game](#8-puzzle-game)
+9. [QR Code](#9-qr-code)
+10. [Rich Text Editor](#10-rich-text-editor)
+11. [Background Color Switcher](#11-background-color-switcher)
+12. [Image Slider](#12-image-slider)
+13. [Analogue Clock](#13-analogue-clock)
+14. [Brick Breaker](#14-brick-breaker)
+15. [Balloon Pop](#15-balloon-pop)
+16. [Interactive Quiz](#16-interactive-quiz)
+17. [Math Addition](#17-math-addition)
+18. [Guess The Number](#18-guess-the-number)
+19. [RSS News Feed](#19-rss-news-feed)
+20. [Session Storage To-Do List](#20-session-storage-to-do-list)
+21. [Whack a Mole](#21-whack-a-mole)
+22. [Word Counter](#22-word-counter)
+23. [Weight Conversion](#23-weight-conversion)
+24. [Expense Calculator](#24-expense-calculator)
+25. [Random Quote](#25-random-quote)
+26. [Toss a Coin](#26-toss-a-coin)
+
+<br>
 
 ### 1. iOS Calculator App
 
@@ -55,7 +90,7 @@ Check out the full code on GitHub.
 
 ---
 
-Want to add your Javasript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
+Want to add your Javascript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
 [Docker Run Command example the ultimate cheatsheet](https://pratikpathak.com/docker-run-command-cheatsheet/)
 
@@ -101,7 +136,7 @@ Have you ever used Microsoft Word? and wondered how you can make one? A rich tex
 
 <hr>
 
-Want to add your Javasript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
+Want to add your Javascript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
 <hr>
 
@@ -143,7 +178,7 @@ Balloon Pop game. Move your mouse over the balloon to pop it. Pop all the balloo
 
 [Live Preview](https://zpratikpathak.github.io/25-Javascript-Projects-for-beginner/15-Balloon-Pop) | [Source Code](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
-Want to add your Javasript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
+Want to add your Javascript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
 <hr>
 
@@ -185,7 +220,7 @@ This project is a simple Todo List application. The HTML file sets up the struct
 
 [Live Preview](https://zpratikpathak.github.io/25-Javascript-Projects-for-beginner/20-SessionStorage-TodoList) | [Source Code](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
-Want to add your Javasript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
+Want to add your Javascript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
 <hr>
 
@@ -237,7 +272,7 @@ This project is a simple web-based Coin Toss game. The HTML file sets up the str
 
 [Live Preview](https://zpratikpathak.github.io/25-Javascript-Projects-for-beginner/26-Toss-a-coin) | [Source Code](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
-Want to add your Javasript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
+Want to add your Javascript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
 <hr>
 
