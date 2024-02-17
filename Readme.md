@@ -1,3 +1,5 @@
+[![GitHub](https://img.shields.io/github/license/zpratikpathak/25-Javascript-Projects-for-beginner?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
+
 # Top 25+ Javascript Projects for Beginners with Source Code Github [2024 Latest Project]
 
 I have curated a list of 25+ javascript projects for beginners with source code. Feel free to play with these projects and improve your skills.
