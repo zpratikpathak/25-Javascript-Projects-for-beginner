@@ -8,6 +8,10 @@ const temperatureElement = document.getElementById("temperature");
 const descriptionElement = document.getElementById("description");
 
 searchButton.addEventListener("click", () => {
+  if (apiKey === "YOUR_API_KEY") {
+    alert("Please set your OpenWeatherMap API key in the script.js file.");
+    return;
+  }
   const location = locationInput.value;
   if (location) {
     fetchWeather(location);
