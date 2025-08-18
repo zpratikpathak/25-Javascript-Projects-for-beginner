@@ -10,9 +10,11 @@ function get_todos() {
 
 function add() {
   var task = document.getElementById("task").value.trim(); // remove extra spaces
+  var alertMessage = document.getElementById("alert");
+  alertMessage.style.display = "none"; // hiding alert message initially
 
   if (task === "") {
-    alert("Please enter a task before adding!"); 
+    alertMessage.style.display = "block"; // show alert if task is empty
     return false; // stop if empty
   }
 
