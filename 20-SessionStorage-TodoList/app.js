@@ -9,7 +9,14 @@ function get_todos() {
 }
 
 function add() {
-  var task = document.getElementById("task").value;
+  var task = document.getElementById("task").value.trim(); // remove extra spaces
+  var alertMessage = document.getElementById("alert");
+  alertMessage.style.display = "none"; // hiding alert message initially
+
+  if (task === "") {
+    alertMessage.style.display = "block"; // show alert if task is empty
+    return false; // stop if empty
+  }
 
   var todos = get_todos();
   todos.push(task);
@@ -17,8 +24,9 @@ function add() {
 
   show();
   clearDefault();
-  return false; //avoids any futher action with click event
+  return false; // avoids any further action with click event
 }
+
 
 //clear the task value from input box
 function clearDefault() {
