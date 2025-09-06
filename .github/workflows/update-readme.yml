@@ -1,0 +1,37 @@
+name: Update Date in README Title
+
+on:
+  schedule:
+    - cron: '0 0 * * 6' # This will run the workflow every Saturday at midnight UTC
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab for testing
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Update date in README
+        run: |
+          # This command finds the pattern like "[2025 Latest Project]" and replaces it.
+          # The regular expression looks for:
+          #   \[      - A literal opening square bracket
+          #   .*      - Any characters (like a previous date or year)
+          #   Latest Project\] - The literal text "Latest Project]"
+          # It replaces this with the current date in the format "[d Mon YYYY Latest Project]".
+          sed -i "s/\[.*Latest Project\]/\[$(date +'%d %b %Y') Latest Project\]/" README.md
+
+      - name: Commit and push if changed
+        run: |
+          # Check if the README.md file has been modified
+          if ! git diff --quiet README.md; then
+            echo "README.md has been updated. Committing changes."
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+            git add README.md
+            git commit -m "docs: Update date in README title"
+            git push
+          else
+            echo "No changes to commit. README is up-to-date."
+          fi
