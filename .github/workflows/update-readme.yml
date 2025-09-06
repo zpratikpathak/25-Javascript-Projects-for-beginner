@@ -12,26 +12,25 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      # Optional but helpful: Add this step to list files for debugging
+      - name: List files in the directory
+        run: ls -la
+
       - name: Update date in README
         run: |
-          # This command finds the pattern like "[2025 Latest Project]" and replaces it.
-          # The regular expression looks for:
-          #   \[      - A literal opening square bracket
-          #   .*      - Any characters (like a previous date or year)
-          #   Latest Project\] - The literal text "Latest Project]"
-          # It replaces this with the current date in the format "[d Mon YYYY Latest Project]".
-          sed -i "s/\[.*Latest Project\]/\[$(date +'%d %b %Y') Latest Project\]/" README.md
+          # Corrected to use "Readme.md" (with a capital R)
+          sed -i "s/\[.*Latest Project\]/\[$(date +'%d %b %Y') Latest Project\]/" Readme.md
 
       - name: Commit and push if changed
         run: |
-          # Check if the README.md file has been modified
-          if ! git diff --quiet README.md; then
-            echo "README.md has been updated. Committing changes."
+          # Corrected to use "Readme.md" in the git diff and add commands
+          if ! git diff --quiet Readme.md; then
+            echo "Readme.md has been updated. Committing changes."
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-            git add README.md
+            git add Readme.md
             git commit -m "docs: Updated Project List"
             git push
           else
-            echo "No changes to commit. README is up-to-date."
+            echo "No changes to commit. Readme.md is up-to-date."
           fi
