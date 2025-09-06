@@ -2,28 +2,27 @@ name: Update Date in README Title
 
 on:
   schedule:
-    - cron: '0 0 * * 6' # This will run the workflow every Saturday at midnight UTC
-  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab for testing
+    - cron: '0 0 * * 6' # Runs every Saturday at midnight UTC
+  workflow_dispatch: # Allows you to run this workflow manually
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    
+    # This is the new block that fixes the permission error
+    permissions:
+      contents: write
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      # Optional but helpful: Add this step to list files for debugging
-      - name: List files in the directory
-        run: ls -la
-
       - name: Update date in README
         run: |
-          # Corrected to use "Readme.md" (with a capital R)
           sed -i "s/\[.*Latest Project\]/\[$(date +'%d %b %Y') Latest Project\]/" Readme.md
 
       - name: Commit and push if changed
         run: |
-          # Corrected to use "Readme.md" in the git diff and add commands
           if ! git diff --quiet Readme.md; then
             echo "Readme.md has been updated. Committing changes."
             git config --global user.name 'github-actions[bot]'
