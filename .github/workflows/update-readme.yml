@@ -30,7 +30,7 @@ jobs:
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
             git add README.md
-            git commit -m "docs: Update date in README title"
+            git commit -m "docs: Updated Project List"
             git push
           else
             echo "No changes to commit. README is up-to-date."
