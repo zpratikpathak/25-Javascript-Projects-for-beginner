@@ -4,7 +4,7 @@
 <img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/046a943d-016c-491a-9d8a-ffca893884c8" />
 </p>
 
-# Top 25+ Javascript Projects for Beginners with Source Code Github [2025 Latest Project]
+# Top 25+ Javascript Projects for Beginners with Source Code Github [06 Sep 2025 Latest Project]
 
 I have curated a list of 25+ javascript projects for beginners with source code. Feel free to play with these projects and improve your skills.
 
