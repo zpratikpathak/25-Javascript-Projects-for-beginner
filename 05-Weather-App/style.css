@@ -1,45 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
-
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Set the background color to be transparent */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
-  margin-top: 105px;
-}
-
-h1 {
-  font-size: 24px;
-}
-
-input[type="text"] {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  height: 100vh;
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+.flex1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 95vh;
+}
+.time {
+  border: 1.8px solid white;
+  width: 26%;
+  min-width: 308px;
+  border-style: solid solid dotted;
+  margin-inline: auto;
+  border-radius: 0px 18px 0px 18px;
+  background: rgb(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 20px;
+}
+.centerbox1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.tm {
+  font-size: 35px;
+  color: white;
+}
+.dt {
+  font-size: 25px;
+  color: white;
 }
 
-button {
-  background-color: #007bff;
-  color: #fff;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerbox {
+  border: 1.8px solid white;
+  width: 26%;
+  min-width: 308px;
+  border-top: 0px;
+  margin-inline: auto;
+  border-radius: 0px 0px 0px 18px;
+  background: rgb(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 20px;
+}
+.input {
+  padding: 8px;
+  font-size: 15px;
+  min-width: 215px;
+  outline: none;
+  background: transparent;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-bottom: 1px solid white;
+  color: white;
 }
-
-.weather-info {
+.input::placeholder {
+  color: rgb(172, 168, 168);
+}
+.items button {
+  width: 80px;
+  padding: 8px;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.items button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s;
+}
+.upbox {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+.rslt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.rslt .img {
+  width: 120px;
+}
+.rslt .tmp {
+  font-size: 40px;
+}
+.rslt h1 {
+  font-size: 18px;
+  font-weight: light;
+  color: white;
+}
+.rslt h2 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.rslt h5 {
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+}
+.er {
+  font-size: 25px;
+  font-weight: 400;
   margin-top: 20px;
+}
+.enter {
+  margin-top: 25px;
+  font-weight: 400;
+}
+.imgbg {
+  margin-top: 20px;
+  background-color: #2e2e2e30;
+  border-radius: 50%;
+}
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+/* .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+} */
+.right > span {
+  color: white;
+  font-weight: 500;
+}
+.icolo{
+    display: flex !important;
+    align-items: center !important;
+    color: white !important;
+    cursor:pointer;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+  body {
+    background-position: top right;
+  }
+  /*  .flex1 {
+    height: 70vh;
+  } */
+  .input {
+    min-width: 170px;
+  }
+  .upbox{
+    gap:10px;
+  }
+}
+@media(max-width:305px){
+  .time,.centerbox{
+    min-width:262px;
+  }
+  .input{
+    min-width: 125px;
+  }
+  .enter{
+    font-size:16px !important;
+  }
+  .tm{
+    font-size:26px;
+  }
+  .dt{
+    font-size: 26px;;
+  }
+  .rslt .img {
+    width: 80px;
+}
+.rslt .tmp {
+  font-size: 30px;
+}
+.rslt h2{
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+.rslt h5 {
+  font-size: 18px;
+}
+}
+@media(min-width:768px){
+  .input{
+    min-width:175px;
+  }
+  .time{
+    max-width: 308px;
+  }
+  .centerbox{
+    max-width:308px;
+  }
 }
