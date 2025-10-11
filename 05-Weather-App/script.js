@@ -111,7 +111,7 @@ locatebtn.onclick = () => {
             1
           )} &#176;C</h5>`;
         country.innerHTML = `<span id="country">${data.sys.country}</span>`;
-        city.innerHTML = `<span id="city">${data.name}/</span>`;
+        city.innerHTML = `<span id="city">${data.name}</span>`;
       })
       .catch((err) => {
         console.log(err);
