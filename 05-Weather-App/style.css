@@ -206,7 +206,7 @@ footer {
   font-size: 18px;
 }
 }
-@media(min-width:768px){
+@media (min-width: 768px) {
   .input{
     min-width:175px;
   }
