@@ -16,8 +16,7 @@ btn.onclick = () => {
   // Consider fetching the key from a secure backend or prompting the user.
   var key = "YOUR_API_KEY";
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${val}
-      &appid=${key}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${val}&appid=${key}`
   )
     .then((res) => res.json())
     .then((data) => {
