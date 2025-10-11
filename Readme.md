@@ -278,6 +278,14 @@ This project is a simple web-based Coin Toss game. The HTML file sets up the str
 
 [Live Preview](https://zpratikpathak.github.io/25-Javascript-Projects-for-beginner/26-Toss-a-coin) | [Source Code](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
+<hr>
+
+### 28. E-commerce Website
+
+This project is a simple web-based  E-commerce Website. The HTML file sets up the structure of the website, which includes a Homepage, a product page, and single product page.
+
+[Live Preview](https://zpratikpathak.github.io/25-Javascript-Projects-for-beginner/28-E-commerce-Website) | [Source Code](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
+
 Want to add your Javascript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
 <hr>
