@@ -111,7 +111,7 @@ locatebtn.onclick = () => {
         city.innerHTML = `<span id="city">${data.name}/</span>`;
       })
       .catch((err) => {
-        console.log(errror);
+        console.log(err);
         result.innerHTML = `<h1 class="er">Oops! Allow the Location 🐥</h1>`;
       });
   });
