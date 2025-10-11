@@ -159,7 +159,7 @@ footer {
     display: flex !important;
     align-items: center !important;
     color: white !important;
-    cursor:pointer;
+    cursor: pointer;
     font-size: 20px;
 }
 @media (max-width: 768px) {
