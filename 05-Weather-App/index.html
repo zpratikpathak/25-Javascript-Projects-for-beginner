@@ -1,21 +1,74 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <div class="container">
-      <h1>Weather App</h1>
-      <input type="text" id="locationInput" placeholder="Enter a city" />
-      <button id="searchButton">Search</button>
-      <div class="weather-info">
-        <h2 id="location"></h2>
-        <p id="temperature"></p>
-        <p id="description"></p>
+    <div class="flex1">
+      <div class="time">
+        <div class="centerbox1">
+          <div class="left">
+            <span id="tm" class="tm">--</span>
+            <span class="dt" id="dte"> -- -- --</span>
+          </div>
+          <div class="right">
+            <span id="city">--/</span><span id="country">IN</span>
+          </div>
+        </div>
+      </div>
+      <!--========Second box========-->
+      <div class="flex">
+        <div class="centerbox">
+          <div class="items">
+            <div class="upbox">
+              <input
+                class="input"
+                type="text"
+                id="name"
+                placeholder="Jamshedpur"
+              />
+              <i
+                id="locate"
+                class="fa-solid fa-location-dot icolo"
+              ></i>
+              <button id="btn">Search</button>
+            </div>
+            <div class="rslt" id="result">
+              <h1 class="enter">Enter the name of a city 🙂</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <footer>Created with ❤️ For Hacktoberfest-2025</footer>
   </body>
+  <script
+    src="https://kit.fontawesome.com/ab2a8e179c.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
 </html>
