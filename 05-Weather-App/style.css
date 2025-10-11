@@ -176,7 +176,7 @@ footer {
     gap: 10px;
   }
 }
-@media(max-width:305px){
+@media (max-width: 305px) {
   .time,.centerbox{
     min-width:262px;
   }
