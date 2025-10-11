@@ -63,6 +63,7 @@ const mth = [
   "Jul",
   "Aug",
   "Sep",
+  "Oct",
   "Nov",
   "Dec",
 ];
