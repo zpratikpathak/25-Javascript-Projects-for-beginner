@@ -79,12 +79,11 @@ setInterval(() => {
   const date = newdt.getDate();
   /*     console.log(dy[day]); */
   /* console.log(hours); */
-  const hrin12format = hours >= 13 ? hours % 12 : hours;
-  const apmp = hours >= 12 ? "PM " : "AM";
+  const hrin12format = hours === 0 ? 12 : (hours > 12 ? hours - 12 : hours);
+  const apmp = hours >= 12 ? "PM" : "AM";
   const min = minutes < 10 ? "0" + minutes : minutes;
   const hrs = hrin12format < 10 ? "0" + hrin12format : hrin12format;
-  const nhr = hrin12format == "00" ? "12" : hrin12format;
-  time.innerHTML = ` <span class="tm">${nhr}:${min} ${apmp}</span>`;
+  time.innerHTML = ` <span class="tm">${hrs}:${min} ${apmp}</span>`;
   dt.innerHTML = `<span class="dt1"> ${dy[day]}, ${date} ${mth[month]}</span>`;
 }, 1000);
 
