@@ -11,7 +11,7 @@ btn.onclick = () => {
     var lon = success.coords.longitude;
     console.log(lat);
     console.log(lon); */
-  var key = "5ba9df89de97533acef292a6b2d75fe8";
+  var key = "YOUR_API_KEY";
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${val}
       &appid=${key}`
