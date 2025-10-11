@@ -89,7 +89,7 @@ setInterval(() => {
 }, 1000);
 
 const locatebtn = document.getElementById("locate");
-var key2 = "5ba9df89de97533acef292a6b2d75fe8";
+var key2 = "YOUR_API_KEY";
 locatebtn.onclick = () => {
   navigator.geolocation.getCurrentPosition((success) => {
     var lat = success.coords.latitude;
