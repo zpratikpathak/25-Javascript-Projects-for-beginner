@@ -25,10 +25,7 @@ list_img[0].onclick = function () {
 };
 list_img[1].onclick = function () {
   main_img.src = list_img[1].src;
-  if (!true) console.log("NotChanged");
-  else {
-    console.log("Changed");
-  }
+  console.log("Changed");
 };
 list_img[2].onclick = function () {
   main_img.src = list_img[2].src;
