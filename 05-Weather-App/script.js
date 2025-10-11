@@ -11,6 +11,9 @@ btn.onclick = () => {
     var lon = success.coords.longitude;
     console.log(lat);
     console.log(lon); */
+  // TODO: Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key.
+  // For security, do NOT hardcode your API key in client-side code.
+  // Consider fetching the key from a secure backend or prompting the user.
   var key = "YOUR_API_KEY";
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${val}
