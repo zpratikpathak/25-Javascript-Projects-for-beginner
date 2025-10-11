@@ -286,6 +286,15 @@ This project is a simple web-based  E-commerce Website. The HTML file sets up th
 
 [Live Preview](https://zpratikpathak.github.io/25-Javascript-Projects-for-beginner/28-E-commerce-Website) | [Source Code](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
+<hr>
+
+### 29. Color Pallete Generator
+
+A beautiful, interactive color palette generator that creates stunning color combinations with a single click. Built with vanilla HTML, CSS, and JavaScript, this tool helps designers, developers, and artists discover harmonious color schemes for their creative projects.
+
+
+[Live Preview](https://zpratikpathak.github.io/25-Javascript-Projects-for-beginner/29-Color-Pallete-Generator) | [Source Code](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
+
 Want to add your Javascript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
 <hr>
