@@ -288,7 +288,7 @@ This project is a simple web-based  E-commerce Website. The HTML file sets up th
 
 <hr>
 
-### 29. Color palette Generator
+### 29. Color Palette Generator
 
 A beautiful, interactive color palette generator that creates stunning color combinations with a single click. Built with vanilla HTML, CSS, and JavaScript, this tool helps designers, developers, and artists discover harmonious color schemes for their creative projects.
 
