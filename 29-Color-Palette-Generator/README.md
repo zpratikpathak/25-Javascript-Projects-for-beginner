@@ -30,7 +30,7 @@ A beautiful, interactive color palette generator that creates stunning color com
 ## 📁 Project Structure
 
 ```
-29-Color-palette-Generator/
+29-Color-Palette-Generator/
 ├── index.html          # Main HTML structure
 ├── style.css           # Styling and responsive design
 ├── script.js           # JavaScript functionality
