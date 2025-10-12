@@ -27,14 +27,10 @@ A beautiful, interactive color palette generator that creates stunning color com
 - **Tablet Ready**: Responsive design for all screen sizes
 - **Fast Loading**: Lightweight and optimized for performance
 
-## 🚀 Live Demo
-
-[View Live Demo](https://your-demo-link-here.com) *(Add your deployed link here)*
-
 ## 📁 Project Structure
 
 ```
-29-Color-Pallete-Generator/
+29-Color-palette-Generator/
 ├── index.html          # Main HTML structure
 ├── style.css           # Styling and responsive design
 ├── script.js           # JavaScript functionality
@@ -64,7 +60,7 @@ To understand and work with this project, you should have:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/ashishgit10/25-Javascript-Projects-for-beginner.git
-cd 25-Javascript-Projects-for-beginner/29-Color-Pallete-Generator
+cd 25-Javascript-Projects-for-beginner/29-Color-palette-Generator
 ```
 
 ### 2. Run the Application
