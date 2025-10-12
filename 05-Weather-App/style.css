@@ -159,7 +159,7 @@ footer {
     display: flex !important;
     align-items: center !important;
     color: white !important;
-    cursor:pointer;
+    cursor: pointer;
     font-size: 20px;
 }
 @media (max-width: 768px) {
@@ -173,10 +173,10 @@ footer {
     min-width: 170px;
   }
   .upbox{
-    gap:10px;
+    gap: 10px;
   }
 }
-@media(max-width:305px){
+@media (max-width: 305px) {
   .time,.centerbox{
     min-width:262px;
   }
@@ -206,7 +206,7 @@ footer {
   font-size: 18px;
 }
 }
-@media(min-width:768px){
+@media (min-width: 768px) {
   .input{
     min-width:175px;
   }
