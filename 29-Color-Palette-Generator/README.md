@@ -60,7 +60,7 @@ To understand and work with this project, you should have:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/ashishgit10/25-Javascript-Projects-for-beginner.git
-cd 25-Javascript-Projects-for-beginner/29-Color-palette-Generator
+cd 25-Javascript-Projects-for-beginner/29-Color-Palette-Generator
 ```
 
 ### 2. Run the Application
