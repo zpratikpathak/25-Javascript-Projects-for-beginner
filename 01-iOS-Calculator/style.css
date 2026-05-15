@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -65,4 +65,118 @@ body {
   align-content: stretch;
   justify-content: space-between;
   margin-bottom: 0.5%;
+} */
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display", "Poppins", sans-serif;
 }
+
+/* === Body === */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  color: white;
+}
+
+/* === Calculator Container === */
+.calc {
+  background: #000;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  width: 320px;
+  padding: 20px;
+}
+
+/* === Display Screen === */
+.screen {
+  background: #1c1c1c;
+  color: #fff;
+  font-size: 2.8rem;
+  text-align: right;
+  padding: 20px 10px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+/* === Button Grid === */
+.class-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* === Button Rows === */
+.calc-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* === Buttons === */
+.calc-button {
+  background: #333;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+/* === Button Hover/Active Effects === */
+.calc-button:hover {
+  background: #444;
+}
+
+.calc-button:active {
+  transform: scale(0.95);
+}
+
+/* === Operator Buttons === */
+.calc-button:nth-child(4),
+.calc-button:last-child {
+  background: #ff9500;
+  color: white;
+}
+
+.calc-button:nth-child(4):hover,
+.calc-button:last-child:hover {
+  background: #ffaa33;
+}
+
+/* === Special Buttons (C, ←) === */
+.double {
+  flex: 2;
+  border-radius: 35px;
+}
+
+.tripple {
+  flex: 3;
+  border-radius: 35px;
+}
+
+/* === Responsive === */
+@media (max-width: 400px) {
+  .calc {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .calc-button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.4rem;
+  }
+}
+
