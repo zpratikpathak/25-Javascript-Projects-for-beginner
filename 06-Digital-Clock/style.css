@@ -1,7 +1,7 @@
 /* Google font */
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
 
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -54,4 +54,116 @@ body {
   background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+} */
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND — soft gradient for glassmorphism */
+html,
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-attachment: fixed;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* DATE / DAY DISPLAY — frosted glass card */
+#dayIntro {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  border-radius: 20px;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+#dayIntro:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* CLOCK CONTAINER — glassy rectangle */
+.container {
+  width: 550px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* CLOCK DISPLAY TEXT — aligned time + AM/PM fix */
+.dispClock #time {
+  display: inline-flex;
+  align-items: baseline; /* keeps AM/PM aligned with digits */
+  justify-content: center;
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+    0 0 25px rgba(255, 255, 255, 0.3);
+  transition: text-shadow 0.3s ease-in-out;
+  line-height: 1;
+}
+
+/* Ensure AM/PM sits neatly beside the numbers */
+.dispClock #time span {
+  font-size: 28px;
+  margin-left: 8px;
+  color: #f0f0f0;
+  opacity: 0.85;
+}
+
+/* Hover effect: soft glow on numbers */
+.dispClock #time:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 35px rgba(255, 255, 255, 0.6);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  #dayIntro {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+
+  .container {
+    width: 90%;
+    height: 110px;
+  }
+
+  .dispClock #time {
+    font-size: 48px;
+  }
+
+  .dispClock #time span {
+    font-size: 18px;
+  }
 }

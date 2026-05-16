@@ -26,7 +26,8 @@ function currentTime() {
   sec = sec < 10 ? "0" + sec : sec;
 
   //value of current time
-  let currentTime = hour + ":" + min + ":" + sec + " " + am_pm;
+let currentTime = `${hour}:${min}:${sec} <span>${am_pm}</span>`;
+
 
   // value of present day(Day, Month, Year)
   var months = [
