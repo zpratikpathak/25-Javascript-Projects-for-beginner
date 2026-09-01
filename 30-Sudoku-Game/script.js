@@ -39,10 +39,12 @@ function createSudoku() {
         input.classList.add("input-cell");
 
         input.type = "text";
-
         input.maxLength = 1;
-
         input.inputMode = "numeric";
+        
+        input.setAttribute("aria-label", `Row ${row + 1}, Column ${col + 1}`);
+        input.autocomplete = "off";
+
         input.addEventListener("input", function () {
           this.value = this.value.replace(/[^1-6]/g, "");
         });

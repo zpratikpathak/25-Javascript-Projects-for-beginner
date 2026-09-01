@@ -38,13 +38,12 @@ This project is intentionally kept simple and beginner-friendly. The goal is to 
 ## Project Structure
 
 ```text
-sudoku/
+30-Sudoku-Game/
 │
 ├── index.html
 ├── style.css
 ├── script.js
 ├── README.md
-│
 └── images/
     ├── sudoku-before.png
     └── sudoku-solved.png
@@ -57,7 +56,7 @@ No installation or setup is required.
 1. Clone the repository:
 
 ```bash
-git clone <https://github.com/Sumit1164/25-Javascript-Projects-for-beginner.git>
+git clone https://github.com/Sumit1164/25-Javascript-Projects-for-beginner.git
 ```
 
 2. Open the project folder.
