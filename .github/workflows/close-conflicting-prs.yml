@@ -1,0 +1,111 @@
+name: Close PRs with Merge Conflicts
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  close-conflicting-prs:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Close PRs with merge conflicts
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+            const RETRY_DELAY_MS = 10000;
+
+            // Fetch PR numbers to check
+            let prNumbers = [];
+
+            if (context.eventName === 'pull_request') {
+              // Only check the PR that triggered this event
+              prNumbers = [context.payload.pull_request.number];
+            } else {
+              // On push to master, check all open PRs (paginate to handle >100 PRs)
+              let page = 1;
+              while (true) {
+                const { data: openPRs } = await github.rest.pulls.list({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  state: 'open',
+                  per_page: 100,
+                  page,
+                });
+                prNumbers.push(...openPRs.map(pr => pr.number));
+                if (openPRs.length < 100) break;
+                page++;
+              }
+            }
+
+            for (const prNumber of prNumbers) {
+              // Retry up to 5 times to allow GitHub to compute mergeable state
+              let mergeable = null;
+              let mergeableState = 'unknown';
+
+              for (let attempt = 1; attempt <= 5; attempt++) {
+                const { data: pr } = await github.rest.pulls.get({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: prNumber,
+                });
+
+                if (pr.state !== 'open') {
+                  break;
+                }
+
+                mergeable = pr.mergeable;
+                mergeableState = pr.mergeable_state;
+
+                if (mergeableState !== 'unknown') {
+                  break;
+                }
+
+                // Wait before retrying if state is still unknown
+                if (attempt < 5) {
+                  console.log(`PR #${prNumber}: mergeable_state is 'unknown', retrying (attempt ${attempt}/5)...`);
+                  await sleep(RETRY_DELAY_MS);
+                }
+              }
+
+              console.log(`PR #${prNumber}: mergeable=${mergeable}, mergeable_state=${mergeableState}`);
+
+              // 'dirty' means there are merge conflicts
+              if (mergeableState === 'dirty') {
+                console.log(`PR #${prNumber} has merge conflicts. Closing it.`);
+
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: prNumber,
+                  body: [
+                    '## ⚠️ Merge Conflict Detected',
+                    '',
+                    'This pull request has been automatically closed because it has merge conflicts with the base branch.',
+                    '',
+                    'To resolve this, please:',
+                    '1. Update your branch with the latest changes from `master`',
+                    '2. Resolve all merge conflicts',
+                    '3. Push the updated branch and re-open the pull request',
+                    '',
+                    'Thank you for your contribution! 🙏',
+                  ].join('\n'),
+                });
+
+                await github.rest.pulls.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: prNumber,
+                  state: 'closed',
+                });
+
+                console.log(`PR #${prNumber} closed due to merge conflicts.`);
+              }
+            }
