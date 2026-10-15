@@ -1,0 +1,113 @@
+* 
+{
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+.game {
+    text-align: center;
+}
+h1 {
+    margin: 0 0 22px;
+    font-size: 32px;
+}
+.sudoku-board {
+    width: 570px;
+    height: 570px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 6px solid #666;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1.5px solid #777;
+    border-bottom: 1.5px solid #777;
+    background: #fff;
+}
+.cell:nth-child(3n) {
+  border-right: 6px solid #666;
+}
+.cell:nth-child(6n) {
+  border-right: 0;
+}
+.cell:nth-child(n + 7):nth-child(-n + 12),
+.cell:nth-child(n + 19):nth-child(-n + 24) {
+    border-bottom: 6px solid #666;
+}
+.cell:nth-child(n + 31):nth-child(-n + 36) {
+  border-bottom: 0;
+}
+.given {
+    font-size: 42px;
+    font-weight: 700;
+    color: #111;
+}
+.input-cell {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #2878ff;
+    background: transparent;
+}
+.input-cell:focus {
+    background: #eef5ff;
+}
+.buttons {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+button {
+    min-width: 120px;
+    padding: 12px 25px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#submitBtn {
+    background: #222;
+    color: white;
+}
+#resetBtn {
+    background: #ddd;
+    color: #111;
+}
+button:hover {
+    opacity: 0.82;
+}
+#message {
+    min-height: 24px;
+    margin: 17px 0 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+@media (max-width: 650px) {
+    .sudoku-board {
+        width: 92vw;
+        height: 92vw;
+    }
+    .given,
+    .input-cell {
+        font-size: 7vw;
+    }
+}
