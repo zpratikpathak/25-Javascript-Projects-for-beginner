@@ -14,6 +14,12 @@ Play against the computer, enjoy animations, and sound effects when you win or l
 ---
 
 ## project
+<img width="984" height="498" alt="Screenshot 2025-08-17 145829" src="https://github.com/user-attachments/assets/82b1a936-b7e2-4362-b337-1cbcab560844" />
+
+ try it live here:  
+👉 [Play the Game](https://rock-paper-scissor-js-d.netlify.app)
+
+---
 
 ## ⚙️ How to Play
 1. Click **Rock**, **Paper**, or **Scissors**.  
