@@ -298,6 +298,11 @@ A beautiful, interactive color palette generator that creates stunning color com
 Want to add your Javascript Project? Feel free to contribute, open a Pull Request [Contribute](https://github.com/zpratikpathak/25-Javascript-Projects-for-beginner)
 
 <hr>
+### 30. Counter App
+
+This project is a simple web-based **Counter Application**.  
+The HTML file sets up the structure of the app, which includes a heading, a display area showing the counter value, and three buttons — **Increase**, **Decrease**, and **Reset** — that let the user update the count dynamically using JavaScript.
+
 
 ### Final Words
 
